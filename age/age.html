@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Age Calcy SHOAIB</title>
+    <style>
+        body{
+            background-image: url("image/back1.jpg");
+                background-size: cover;
+        }
+
+    .main{
+        border-radius: 10px ;
+        background-color: rgba(36, 23, 23, 0.705);
+        padding: 50px;
+        position: absolute;
+        transform: translateX(50%),translateY(50%);
+        left: 65%;
+        top: 15%;
+        text-align: center;
+    }
+       
+    #num1{
+    height: 50px;
+    margin-left: 3px;
+    font-size: 30px;
+    border-radius: 5px; 
+    color:#3151b5;
+    }
+    button{
+     width:90px;
+      height: 60px;
+      font-size: 20px;
+     background-color: rgba(58, 75, 75, 0.883);
+     cursor: pointer;
+     border-radius: 5px;
+    }
+    button:hover{
+      background: linear-gradient(to right,#e91e63,#3151b5);
+    }
+    h1{
+        color:gainsboro;
+    }
+    .h1{
+        position: absolute;
+        left: 39%;
+        top:54%;
+        color:honeydew;
+    }
+    img{
+        width: 5%;
+        height: 5%;
+        margin: 30% 0% 0% 49%;
+        
+    }
+
+
+    @media screen and (max-width:320px){
+        body{
+            background: linear-gradient(to right,#e91e63,#3151b5);
+        }
+        .main{
+            width: 50%;
+            left: 9%;
+            top: 29%;
+        }
+        #num1{
+            width: 100%;
+            margin-left: 6px;
+            font-size: 25px;
+            border-radius: 5px; 
+            color:#3151b5;
+    }
+    .h1{
+        position: absolute;
+        left: 3%;
+        text-align: center;
+        top:11%;
+        color:honeydew;
+    }
+    img{
+        width: 25%;
+        height: 25%;
+        margin: 5% 0% 0% 38%;
+        text-align: center;
+    }
+        
+    }
+    </style>
+        <script>
+            function calculate(){
+            var a = 78;
+            var age1 = document.getElementById("num1").value;
+            var c = 1941;
+            result = parseInt(a)-parseInt(age1)+parseInt(c);
+            if(!isNaN(result))
+            {
+            document.getElementById("answer").innerHTML="Your Brith Year<br>"+result;
+            }
+        }
+        </script>
+</head>
+<body>
+        <h1 class="h1">DEVELOPED BY SHOAIB</h1>
+   <div class="main">
+            <input type="text" id="num1" placeholder="Enter Age" >
+        <br><br>
+                <button onclick="calculate()"> SUBMIT </button>
+        <br><br>
+        <h1 id="answer"></h1>
+   </div>
+   <a href="https://www.instagram.com/r.shoaib313/?hl=en"><img src="image/insta.jpg" ></a>
+</body>
+</html>
