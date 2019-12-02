@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Age Calcy SHOAIB</title>
+    <style>
+        body{
+            background-image: url("image/back1.jpg");
+                background-size: cover;
+        }
+
+    .main{
+        border-radius: 10px ;
+        background-color: rgba(36, 23, 23, 0.705);
+        padding: 50px;
+        position: absolute;
+        transform: translateX(50%),translateY(50%);
+        left: 65%;
+        top: 15%;
+        text-align: center;
+    }
+       
+    #num1{
+    height: 50px;
+    margin-left: 3px;
+    font-size: 30px;
+    border-radius: 5px; 
+    color:#3151b5;
+    width: 100%;
+    }
+    button{
+     width:90px;
+      height: 60px;
+      font-size: 20px;
+     background-color: rgba(58, 75, 75, 0.883);
+     cursor: pointer;
+     border-radius: 5px;
+    }
+    button:hover{
+      background: linear-gradient(to right,#e91e63,#3151b5);
+    }
+    h1{
+        color:gainsboro;
+    }
+    .h1{
+        position: absolute;
+        left: 39%;
+        top:54%;
+        color:honeydew;
+    }
+    img{
+        width: 5%;
+        height: 5%;
+        margin: 30% 0% 0% 49%;
+        
+    }
+
+
+    @media screen and (max-width:1196px){
+        img{
+            margin: 30% 0% 0% 43%;
+         }
+         .h1{
+            top:43%;
+            left: 30%;
+        }
+        .main{
+            width: 20%;
+        }
+    }
+    @media screen and (max-width:817px){
+        img{
+            margin: 10% 0% 0% 79%;
+         }
+    }
+    @media screen and (max-width:650px){
+        .h1{
+            top:7%;
+            left: 20%;
+        }
+        img{
+            margin: 6% 0% 0% 45%;
+         }
+         .main{
+            left: 30%;
+        }
+        body{
+            background: linear-gradient(to right,#e91e63,#3151b5);
+        }
+    }
+    @media screen and (max-width:420px){
+        .main{
+           width: 60%;
+           margin-left: -26%;
+           margin-top: 20%;
+        }
+        img{
+            width: 25%;
+            height: 25%;
+            margin: 6% 0% 0% 38%;
+         }
+         .h1{
+            top:10%;
+            left: 10%;
+            text-align: center;
+        }
+        body{
+            background: linear-gradient(to right,#e91e63,#3151b5);
+        }
+    }
+    </style>
+        <script>
+            function calculate(){
+            var a = 78;
+            var age1 = document.getElementById("num1").value;
+            var c = 1941;
+            result = parseInt(a)-parseInt(age1)+parseInt(c);
+            if(!isNaN(result))
+            {
+            document.getElementById("answer").innerHTML="Your Brith Year<br>"+result;
+            }
+        }
+        </script>
+</head>
+<body>
+        <h1 class="h1">DEVELOPED BY SHOAIB</h1>
+   <div class="main">
+            <input type="text" id="num1" placeholder="Enter Age" >
+        <br><br>
+                <button onclick="calculate()"> SUBMIT </button>
+        <br><br>
+        <h1 id="answer"></h1>
+   </div>
+   <a href="https://www.instagram.com/r.shoaib313/?hl=en"><img src="image/insta.jpg" ></a>
+</body>
+</html>
